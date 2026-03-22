@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}" itemscope itemtype="https://schema.org/LocalBusiness">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- ═══ SEO PRIMARIO ═══════════════════════════════════════════════════ -->
+  <title>{{TITLE}}</title>
+  <meta name="description"         content="{{META_DESC}}">
+  <meta name="keywords"            content="{{META_KEYWORDS}}">
+  <meta name="robots"              content="{{ROBOTS}}">
+  <meta name="author"              content="{{BUSINESS_NAME}}">
+  <meta name="language"            content="Spanish">
+  <meta name="revisit-after"       content="7 days">
+  <link rel="canonical"            href="{{CANONICAL}}">
+
+  <!-- ═══ GEO / LOCAL SEO ════════════════════════════════════════════════ -->
+  <meta name="geo.region"          content="{{GEO_REGION}}">
+  <meta name="geo.placename"       content="{{GEO_PLACENAME}}">
+  <meta name="geo.position"        content="{{GEO_LAT}};{{GEO_LON}}">
+  <meta name="ICBM"                content="{{GEO_LAT}}, {{GEO_LON}}">
+  {{OPENING_HOURS}}
+
+  <!-- ═══ OPEN GRAPH ═════════════════════════════════════════════════════ -->
+  <meta property="og:type"         content="website">
+  <meta property="og:locale"       content="{{OG_LOCALE}}">
+  <meta property="og:site_name"    content="{{SITE_NAME}}">
+  <meta property="og:title"        content="{{OG_TITLE}}">
+  <meta property="og:description"  content="{{OG_DESC}}">
+  <meta property="og:image"        content="{{OG_IMAGE}}">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url"          content="{{OG_URL}}">
+
+  <!-- ═══ TWITTER CARD ═══════════════════════════════════════════════════ -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="{{TWITTER_TITLE}}">
+  <meta name="twitter:description" content="{{TWITTER_DESC}}">
+  <meta name="twitter:image"       content="{{TWITTER_IMAGE}}">
+
+  <!-- ═══ SCHEMA.ORG JSON-LD ════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+{{SCHEMA_JSON}}
+  </script>
+
+  <!-- ═══ FAVICON & ASSETS ══════════════════════════════════════════════ -->
+  <link rel="icon"             type="image/x-icon"  href="/favicon.ico">
+  <link rel="shortcut icon"    type="image/x-icon"  href="/favicon.ico">
+  <link rel="apple-touch-icon"                      href="/img/logo-rcastur.png">
+
+  <!-- ═══ FUENTES ════════════════════════════════════════════════════════ -->
+  <link rel="preconnect"  href="https://fonts.googleapis.com">
+  <link rel="preconnect"  href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap">
+
+  <!-- ═══ ESTILOS ════════════════════════════════════════════════════════ -->
+  <style>
+    /* ── RESET & BASE ─────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 400;
+      color: #1a1a1a;
+      background: #fff;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+    a   { color: inherit; text-decoration: none; }
+
+    /* ── VARIABLES ─────────────────────────────────────────────────────── */
+    :root {
+      --navy:      #0D1B2A;
+      --steel:     #1C3A5C;
+      --gold:      #C8941A;
+      --gold-lt:   #E8B84B;
+      --slate:     #4A6580;
+      --light:     #F4F6F8;
+      --white:     #FFFFFF;
+      --text:      #1a1a1a;
+      --text-mute: #555;
+      --radius:    4px;
+      --shadow:    0 4px 24px rgba(0,0,0,0.10);
+      --transition:0.25s ease;
+    }
+
+    /* ── NAVBAR ───────────────────────────────────────────────────────── */
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem;
+      height: 72px;
+      background: rgba(13,27,42,0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(200,148,26,0.25);
+      transition: background var(--transition);
+    }
+
+    .navbar__logo img {
+      height: 44px;
+      width: auto;
+    }
+
+    .navbar__nav {
+      display: flex; align-items: center; gap: 0.25rem;
+      list-style: none;
+    }
+
+    .navbar__nav a {
+      display: block;
+      padding: 0.4rem 0.85rem;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.80);
+      border-radius: var(--radius);
+      transition: color var(--transition), background var(--transition);
+    }
+
+    .navbar__nav a:hover,
+    .navbar__nav a.active { color: var(--gold); background: rgba(200,148,26,0.08); }
+
+    .navbar__cta {
+      background: var(--gold) !important;
+      color: var(--navy) !important;
+      font-weight: 700 !important;
+      padding: 0.4rem 1rem !important;
+    }
+
+    .navbar__cta:hover { background: var(--gold-lt) !important; }
+
+    /* Hamburger */
+    .navbar__burger {
+      display: none;
+      flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: 4px;
+    }
+    .navbar__burger span {
+      display: block; width: 24px; height: 2px;
+      background: var(--white);
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    /* ── HERO ─────────────────────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      height: 100vh; min-height: 600px;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+
+    .hero__video-wrap {
+      position: absolute; inset: 0; z-index: 0;
+    }
+
+    .hero__video {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      /* 🎯 Reproducción a mitad de velocidad */
+      animation: none;
+    }
+
+    .hero__overlay {
+      position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(
+        135deg,
+        rgba(13,27,42,0.82) 0%,
+        rgba(13,27,42,0.55) 60%,
+        rgba(28,58,92,0.35) 100%
+      );
+    }
+
+    /* Línea diagonal dorada decorativa */
+    .hero__overlay::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 100%; height: 4px;
+      background: linear-gradient(90deg, var(--gold) 0%, transparent 70%);
+    }
+
+    .hero__content {
+      position: relative; z-index: 2;
+      text-align: center;
+      padding: 2rem;
+      max-width: 860px;
+    }
+
+    .hero__eyebrow {
+      display: inline-block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 600;
+      letter-spacing: 4px; text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(200,148,26,0.45);
+      padding: 4px 16px;
+      border-radius: 2px;
+      margin-bottom: 1.25rem;
+      animation: fadeInUp 0.6s ease 0.1s both;
+    }
+
+    .hero__title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      animation: fadeInUp 0.6s ease 0.25s both;
+    }
+
+    .hero__title em { color: var(--gold); font-style: normal; }
+
+    .hero__subtitle {
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      font-weight: 300;
+      color: rgba(255,255,255,0.75);
+      letter-spacing: 1px;
+      margin-bottom: 2.25rem;
+      animation: fadeInUp 0.6s ease 0.4s both;
+    }
+
+    .hero__actions {
+      display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+      animation: fadeInUp 0.6s ease 0.55s both;
+    }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 0.8rem 1.8rem;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: all var(--transition);
+      border: 2px solid transparent;
+    }
+
+    .btn--primary {
+      background: var(--gold); color: var(--navy); border-color: var(--gold);
+    }
+    .btn--primary:hover { background: var(--gold-lt); border-color: var(--gold-lt); }
+
+    .btn--outline {
+      background: transparent; color: var(--white);
+      border-color: rgba(255,255,255,0.45);
+    }
+    .btn--outline:hover { border-color: var(--gold); color: var(--gold); }
+
+    /* Stats bajo el hero */
+    .hero__stats {
+      position: absolute; bottom: 2.5rem; left: 0; right: 0; z-index: 2;
+      display: flex; justify-content: center; gap: 3rem;
+      animation: fadeInUp 0.6s ease 0.7s both;
+    }
+
+    .hero__stat { text-align: center; }
+    .hero__stat-n {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2rem; font-weight: 700;
+      color: var(--gold); line-height: 1;
+    }
+    .hero__stat-l {
+      font-size: 11px; font-weight: 400;
+      color: rgba(255,255,255,0.55);
+      letter-spacing: 1px; text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── SECCIÓN SERVICIOS ────────────────────────────────────────────── */
+    .section { padding: 5rem 2rem; }
+    .section--alt { background: var(--light); }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .section__label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 4px; text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .section__title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .section__sub {
+      font-size: 1rem; color: var(--text-mute);
+      max-width: 620px;
+      margin-bottom: 3rem;
+    }
+
+    /* Grid servicios */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: var(--white);
+      border: 1px solid #e5e7eb;
+      border-left: 4px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .service-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+
+    .service-card--secondary { border-left-color: var(--slate); }
+
+    .service-card__num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 2px; text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.4rem;
+    }
+
+    .service-card--secondary .service-card__num { color: var(--slate); }
+
+    .service-card__title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.2rem; font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+    }
+
+    .service-card__desc {
+      font-size: 0.9rem; color: var(--text-mute);
+      line-height: 1.6;
+    }
+
+    .service-card__link {
+      display: inline-block;
+      margin-top: 1rem;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 600;
+      letter-spacing: 1px; text-transform: uppercase;
+      color: var(--gold);
+      border-bottom: 1px solid transparent;
+      transition: border-color var(--transition);
+    }
+
+    .service-card__link:hover { border-color: var(--gold); }
+
+    /* ── SECCIÓN IMÁGENES / PROYECTOS ─────────────────────────────────── */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 260px 260px;
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: var(--radius);
+      position: relative;
+    }
+
+    .gallery-item:first-child {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .gallery-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover img { transform: scale(1.04); }
+
+    .gallery-item__caption {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 1rem;
+      background: linear-gradient(transparent, rgba(13,27,42,0.85));
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 600;
+      letter-spacing: 1px; text-transform: uppercase;
+      color: var(--white);
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+
+    .gallery-item:hover .gallery-item__caption { opacity: 1; }
+
+    /* ── SECCIÓN CONFIANZA / STATS ────────────────────────────────────── */
+    .trust-bar {
+      background: var(--navy);
+      padding: 3rem 2rem;
+    }
+
+    .trust-grid {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .trust-item { text-align: center; }
+
+    .trust-item__n {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2.8rem; font-weight: 700;
+      color: var(--gold); line-height: 1;
+    }
+
+    .trust-item__l {
+      font-size: 12px; font-weight: 400;
+      color: rgba(255,255,255,0.55);
+      letter-spacing: 1.5px; text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* ── SECCIÓN CONTENIDO ────────────────────────────────────────────── */
+    .content-block { max-width: 820px; }
+
+    .content-block h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.7rem; font-weight: 700;
+      color: var(--navy); margin: 2rem 0 0.75rem;
+    }
+
+    .content-block p { font-size: 1rem; color: var(--text-mute); margin-bottom: 1rem; }
+
+    .content-block ul {
+      list-style: none; margin: 0 0 1.5rem;
+    }
+
+    .content-block ul li {
+      padding: 0.4rem 0 0.4rem 1.5rem;
+      font-size: 0.95rem; color: var(--text-mute);
+      position: relative; border-bottom: 1px solid #f0f0f0;
+    }
+
+    .content-block ul li::before {
+      content: '—'; position: absolute; left: 0; color: var(--gold);
+    }
+
+    .content-block strong { color: var(--navy); font-weight: 500; }
+
+    /* ── CTA BANNER ───────────────────────────────────────────────────── */
+    .cta-banner {
+      background: var(--gold);
+      padding: 3.5rem 2rem;
+      text-align: center;
+    }
+
+    .cta-banner__title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700; color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+
+    .cta-banner__sub {
+      font-size: 1rem; color: rgba(13,27,42,0.70);
+      margin-bottom: 1.75rem;
+    }
+
+    .cta-banner .btn--primary {
+      background: var(--navy); border-color: var(--navy); color: var(--white);
+    }
+
+    .cta-banner .btn--primary:hover { background: var(--steel); border-color: var(--steel); }
+
+    /* ── FORMULARIO ───────────────────────────────────────────────────── */
+    .form-section { padding: 5rem 2rem; background: var(--light); }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .form-info__phone {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2.2rem; font-weight: 700;
+      color: var(--navy); margin: 1rem 0 0.25rem;
+    }
+
+    .form-info__phone a { color: inherit; }
+
+    .form-info__detail {
+      font-size: 0.9rem; color: var(--text-mute);
+      margin-bottom: 2rem;
+    }
+
+    .form-info__addr {
+      font-size: 0.9rem; color: var(--text-mute);
+      border-top: 1px solid #dde; padding-top: 1rem;
+    }
+
+    form { display: flex; flex-direction: column; gap: 1rem; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: var(--radius);
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.95rem;
+      color: var(--text);
+      background: var(--white);
+      transition: border-color var(--transition);
+      outline: none;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--gold);
+    }
+
+    textarea { resize: vertical; min-height: 120px; }
+
+    .form__submit {
+      background: var(--navy); color: var(--white);
+      border: 2px solid var(--navy);
+      padding: 0.85rem 2rem;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px; font-weight: 700;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .form__submit:hover { background: var(--gold); border-color: var(--gold); color: var(--navy); }
+
+    .form__legal {
+      font-size: 11px; color: #9ca3af; line-height: 1.5;
+    }
+
+    /* ── FOOTER ───────────────────────────────────────────────────────── */
+    .footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.65);
+      padding: 4rem 2rem 2rem;
+    }
+
+    .footer__grid {
+      max-width: 1140px; margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2rem; margin-bottom: 3rem;
+    }
+
+    .footer__logo img { height: 40px; margin-bottom: 1rem; }
+
+    .footer__desc {
+      font-size: 13px; line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .footer__phone {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.4rem; font-weight: 600;
+      color: var(--gold);
+    }
+
+    .footer__phone a { color: inherit; }
+
+    .footer__heading {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 3px; text-transform: uppercase;
+      color: rgba(255,255,255,0.40);
+      margin-bottom: 1rem;
+    }
+
+    .footer__links { list-style: none; }
+
+    .footer__links li { margin-bottom: 0.4rem; }
+
+    .footer__links a {
+      font-size: 13px; color: rgba(255,255,255,0.60);
+      transition: color var(--transition);
+    }
+
+    .footer__links a:hover { color: var(--gold); }
+
+    .footer__bottom {
+      max-width: 1140px; margin: 0 auto;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 1.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1rem;
+    }
+
+    .footer__copy { font-size: 12px; }
+
+    .footer__legal { display: flex; gap: 1.5rem; }
+    .footer__legal a { font-size: 12px; color: rgba(255,255,255,0.40); }
+    .footer__legal a:hover { color: var(--gold); }
+
+    /* ── WHATSAPP FLOAT ───────────────────────────────────────────────── */
+    .whatsapp-float {
+      position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 999;
+      display: flex; align-items: center; gap: 10px;
+      background: #25D366; color: #fff;
+      padding: 0.65rem 1.25rem;
+      border-radius: 50px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px; font-weight: 600; letter-spacing: 0.5px;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(37,211,102,0.45);
+    }
+
+    .whatsapp-float svg { width: 20px; height: 20px; fill: white; }
+
+    /* ── RESPONSIVE ───────────────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .navbar__nav { display: none; }
+      .navbar__nav.open {
+        display: flex; flex-direction: column;
+        position: fixed; top: 72px; left: 0; right: 0;
+        background: var(--navy);
+        padding: 1.5rem 2rem;
+        border-top: 1px solid rgba(200,148,26,0.2);
+        gap: 0.5rem;
+      }
+      .navbar__burger { display: flex; }
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
+      .gallery-item:first-child { grid-column: span 2; grid-row: span 1; }
+      .form-grid { grid-template-columns: 1fr; }
+      .footer__grid { grid-template-columns: 1fr 1fr; }
+      .hero__stats { gap: 1.5rem; }
+    }
+
+    @media (max-width: 600px) {
+      .section { padding: 3.5rem 1.25rem; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item:first-child { grid-column: span 1; }
+      .footer__grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .hero__stats { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ══════════════════════════════════════════════════════ -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Navegación principal">
+      <a class="navbar__logo" href="/" aria-label="RCASTUR — Inicio">
+        <img src="/img/logo-rcastur.png"
+             alt="RCASTUR — Reformas y Construcción Asturias S.L."
+             width="160" height="44"
+             loading="eager">
+      </a>
+
+      <ul class="navbar__nav" id="nav-menu">
+        <li><a href="/reformas-oviedo.html">Reformas Oviedo</a></li>
+        <li><a href="/reformas-gijon.html">Reformas Gijón</a></li>
+        <li><a href="/construccion-obra-nueva-asturias.html">Construcción</a></li>
+        <li><a href="/arquitectura-tecnica-planos-oviedo.html">Arquitectura Técnica</a></li>
+        <li><a href="/inspeccion-tecnica-edificios-ITE-oviedo.html">ITE</a></li>
+        <li><a href="/certificado-eficiencia-energetica-asturias.html">Certificados</a></li>
+        <li>
+          <a href="/presupuesto-reformas-asturias.html" class="navbar__cta">
+            Presupuesto Gratis
+          </a>
+        </li>
+      </ul>
+
+      <button class="navbar__burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══ HERO CON VÍDEO ════════════════════════════════════════════ -->
+    <section class="hero" aria-label="Sección principal RCASTUR">
+      <div class="hero__video-wrap">
+        <video class="hero__video"
+               id="hero-video"
+               autoplay
+               muted
+               loop
+               playsinline
+               preload="auto"
+               aria-hidden="true">
+          <source src="/video/hero-bg.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <span class="hero__eyebrow">{{SHORT_NAME}} — Asturias</span>
+        <h1 class="hero__title">{{HERO_TEXT}}</h1>
+        <p class="hero__subtitle">{{HERO_SUBTEXT}}</p>
+        <div class="hero__actions">
+          <a href="/presupuesto-reformas-asturias.html" class="btn btn--primary">
+            Presupuesto Gratis
+          </a>
+          <a href="tel:{{PHONE_LINK}}" class="btn btn--outline">
+            ☎ {{PHONE}}
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__stats" aria-label="Datos clave">
+        <div class="hero__stat">
+          <div class="hero__stat-n">+15</div>
+          <div class="hero__stat-l">Años de experiencia</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-n">+500</div>
+          <div class="hero__stat-l">Proyectos completados</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-n">4.9★</div>
+          <div class="hero__stat-l">Valoración Google</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-n">5</div>
+          <div class="hero__stat-l">Ciudades en Asturias</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SERVICIOS ═════════════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="servicios-titulo">
+      <div class="container">
+        <p class="section__label">Qué hacemos</p>
+        <h2 class="section__title" id="servicios-titulo">{{H2}}</h2>
+        <p class="section__sub">Cubrimos todo el ciclo de la construcción: desde el plano hasta el certificado final de obra.</p>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-card__num">Área 01</div>
+            <h3 class="service-card__title">Reformas Integrales</h3>
+            <p class="service-card__desc">Reformas de viviendas, cocinas, baños y locales en Oviedo, Gijón, Avilés, Siero y Mieres. Equipo propio, sin intermediarios.</p>
+            <a href="/reformas-oviedo.html" class="service-card__link">Ver más →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__num">Área 02</div>
+            <h3 class="service-card__title">Construcción y Obra Nueva</h3>
+            <p class="service-card__desc">Viviendas unifamiliares, naves industriales y edificios plurifamiliares en Asturias. Gestión integral del proyecto.</p>
+            <a href="/construccion-obra-nueva-asturias.html" class="service-card__link">Ver más →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__num">Área 03</div>
+            <h3 class="service-card__title">Arquitectura Técnica</h3>
+            <p class="service-card__desc">Planos, proyectos de ejecución, dirección de obra y aparejador colegiado. Licencias de obra en todos los municipios asturianos.</p>
+            <a href="/arquitectura-tecnica-planos-oviedo.html" class="service-card__link">Ver más →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__num">Área 04</div>
+            <h3 class="service-card__title">ITE e Inspecciones</h3>
+            <p class="service-card__desc">Inspección Técnica de Edificios (ITE) oficial en Oviedo y toda Asturias. Informe técnico y tramitación con el Ayuntamiento.</p>
+            <a href="/inspeccion-tecnica-edificios-ITE-oviedo.html" class="service-card__link">Ver más →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__num">Área 05</div>
+            <h3 class="service-card__title">Certificado Energético</h3>
+            <p class="service-card__desc">Certificado de eficiencia energética oficial en 48h. Obligatorio para vender o alquilar. Técnico certificador en toda Asturias.</p>
+            <a href="/certificado-eficiencia-energetica-asturias.html" class="service-card__link">Ver más →</a>
+          </article>
+
+          <article class="service-card service-card--secondary">
+            <div class="service-card__num">Área 06</div>
+            <h3 class="service-card__title">Rehabilitación y Fachadas</h3>
+            <p class="service-card__desc">SATE, monocapa, fachada ventilada y restauración de piedra asturiana. Cumplimiento de la normativa CTE y subvenciones.</p>
+            <a href="/rehabilitacion-fachadas-asturias.html" class="service-card__link">Ver más →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ GALERÍA ════════════════════════════════════════════════════ -->
+    <section class="section section--alt" aria-labelledby="galeria-titulo">
+      <div class="container">
+        <p class="section__label">Nuestros proyectos</p>
+        <h2 class="section__title" id="galeria-titulo">Calidad técnica en cada obra</h2>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="/img/img6.jpg"
+                 alt="Edificio de construcción en Asturias — RCASTUR"
+                 width="760" height="520"
+                 loading="lazy">
+            <div class="gallery-item__caption">Obra nueva residencial · Asturias</div>
+          </div>
+          <div class="gallery-item">
+            <img src="/img/img2.jpeg"
+                 alt="Construcción de edificio con andamios — RCASTUR Asturias"
+                 width="360" height="250"
+                 loading="lazy">
+            <div class="gallery-item__caption">Rehabilitación de fachada</div>
+          </div>
+          <div class="gallery-item">
+            <img src="/img/img3.jpeg"
+                 alt="Planos y arquitectura técnica — RCASTUR"
+                 width="360" height="250"
+                 loading="lazy">
+            <div class="gallery-item__caption">Arquitectura técnica · Planos</div>
+          </div>
+          <div class="gallery-item">
+            <img src="/img/img4.jpg"
+                 alt="Estructura de hormigón en obra nueva — RCASTUR"
+                 width="360" height="250"
+                 loading="lazy">
+            <div class="gallery-item__caption">Estructura hormigón · Obra nueva</div>
+          </div>
+          <div class="gallery-item">
+            <img src="/img/img1.jpeg"
+                 alt="Reforma integral de vivienda en Oviedo — RCASTUR"
+                 width="360" height="250"
+                 loading="lazy">
+            <div class="gallery-item__caption">Reforma integral · Oviedo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TRUST BAR ═════════════════════════════════════════════════ -->
+    <div class="trust-bar" aria-label="Datos de confianza RCASTUR">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-item__n">+15 años</div>
+          <div class="trust-item__l">Experiencia en Asturias</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item__n">REA</div>
+          <div class="trust-item__l">Empresa acreditada</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item__n">Aparejador</div>
+          <div class="trust-item__l">Colegiado en plantilla</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item__n">Garantía</div>
+          <div class="trust-item__l">Seguro RC profesional</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item__n">4.9 ★</div>
+          <div class="trust-item__l">Google My Business</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ CONTENIDO SEO DINÁMICO ════════════════════════════════════ -->
+    <section class="section" aria-labelledby="contenido-titulo">
+      <div class="container">
+        <h2 class="section__title" id="contenido-titulo">{{H1}}</h2>
+        <div class="content-block">
+          {{CONTENIDO}}
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CTA BANNER ════════════════════════════════════════════════ -->
+    <div class="cta-banner">
+      <h2 class="cta-banner__title">¿Tienes un proyecto en mente?</h2>
+      <p class="cta-banner__sub">Solicita tu presupuesto gratuito. Respondemos en menos de 24 horas.</p>
+      <a href="/presupuesto-reformas-asturias.html" class="btn btn--primary">
+        Solicitar Presupuesto Gratis
+      </a>
+    </div>
+
+    <!-- ═══ FORMULARIO DE CONTACTO ═══════════════════════════════════ -->
+    <section class="form-section" id="contacto" aria-labelledby="form-titulo">
+      <div class="container">
+        <p class="section__label">Contacto</p>
+        <h2 class="section__title" id="form-titulo">Solicita tu presupuesto gratis</h2>
+
+        <div class="form-grid">
+          <!-- Información de contacto -->
+          <div class="form-info">
+            <p>Cuéntanos tu proyecto y te damos una valoración sin compromiso en menos de 24 horas. Cubrimos toda Asturias con equipo propio.</p>
+
+            <div class="form-info__phone">
+              <a href="tel:{{PHONE_LINK}}" aria-label="Llamar a RCASTUR">{{PHONE}}</a>
+            </div>
+            <p class="form-info__detail">Lunes a viernes 8:00–19:00 · Sábados 9:00–14:00</p>
+
+            <a href="https://wa.me/{{WHATSAPP}}?text=Hola,%20me%20gustaría%20pedir%20un%20presupuesto%20para%20una%20reforma"
+               class="btn btn--primary"
+               style="margin-bottom:1.5rem; display:inline-flex;"
+               target="_blank" rel="noopener">
+              WhatsApp — Escríbenos
+            </a>
+
+            <div class="form-info__addr"
+                 itemprop="address"
+                 itemscope itemtype="https://schema.org/PostalAddress">
+              <span itemprop="streetAddress">{{ADDRESS_STREET}}</span><br>
+              <span itemprop="postalCode">{{ADDRESS_CP}}</span>
+              <span itemprop="addressLocality"> {{ADDRESS_CITY}}</span>,
+              <span itemprop="addressRegion">{{ADDRESS_PROVINCE}}</span>
+            </div>
+          </div>
+
+          <!-- Formulario -->
+          <form action="https://api.web3forms.com/submit"
+                method="POST"
+                aria-label="Formulario de presupuesto RCASTUR">
+
+            <input type="hidden" name="access_key" value="TU_ACCESS_KEY_WEB3FORMS">
+            <input type="hidden" name="subject" value="Presupuesto RCASTUR — {{SLUG}}">
+            <input type="hidden" name="redirect" value="{{WEBSITE}}/gracias.html">
+            <input type="hidden" name="botcheck" value="">
+
+            <div class="form-row">
+              <input type="text"  name="nombre"   placeholder="Tu nombre *"   required aria-label="Nombre">
+              <input type="tel"   name="telefono" placeholder="Teléfono *"     required aria-label="Teléfono">
+            </div>
+            <input type="email" name="email" placeholder="Email (opcional)" aria-label="Email">
+            <select name="servicio" aria-label="Tipo de servicio">
+              <option value="">— Tipo de servicio —</option>
+              <option>Reforma integral de vivienda</option>
+              <option>Reforma de cocina o baño</option>
+              <option>Obra nueva</option>
+              <option>Arquitectura técnica / Planos</option>
+              <option>ITE — Inspección Técnica de Edificios</option>
+              <option>Certificado de eficiencia energética</option>
+              <option>Rehabilitación de fachada</option>
+              <option>Obras públicas / Urbanización</option>
+              <option>Otro</option>
+            </select>
+            <textarea name="mensaje" placeholder="Descríbenos tu proyecto (localidad, superficie aproximada, tipo de obra...)" aria-label="Mensaje"></textarea>
+
+            <button type="submit" class="form__submit">
+              Enviar Solicitud de Presupuesto
+            </button>
+
+            <p class="form__legal">
+              Al enviar este formulario aceptas nuestra
+              <a href="/politica-privacidad.html">política de privacidad</a>.
+              Tus datos no serán cedidos a terceros.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ══════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo" itemscope itemtype="https://schema.org/LocalBusiness">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">
+          <img src="/img/logo-rcastur.png"
+               alt="RCASTUR — Reformas y Construcción Asturias"
+               width="140" height="38" loading="lazy">
+        </div>
+        <p class="footer__desc" itemprop="description">
+          Empresa de reformas, construcción y arquitectura técnica en Asturias.
+          Aparejador colegiado, inspecciones ITE y certificados energéticos en Oviedo, Gijón y Avilés.
+        </p>
+        <div class="footer__phone">
+          <a href="tel:{{PHONE_LINK}}" itemprop="telephone">{{PHONE}}</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer__heading">Reformas</h3>
+        <ul class="footer__links">
+          <li><a href="/reformas-oviedo.html">Reformas Oviedo</a></li>
+          <li><a href="/reformas-gijon.html">Reformas Gijón</a></li>
+          <li><a href="/reformas-aviles.html">Reformas Avilés</a></li>
+          <li><a href="/reformas-siero.html">Reformas Siero</a></li>
+          <li><a href="/reformas-mieres.html">Reformas Mieres</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__heading">Servicios técnicos</h3>
+        <ul class="footer__links">
+          <li><a href="/construccion-obra-nueva-asturias.html">Obra nueva</a></li>
+          <li><a href="/arquitectura-tecnica-planos-oviedo.html">Arquitectura técnica</a></li>
+          <li><a href="/inspeccion-tecnica-edificios-ITE-oviedo.html">ITE Edificios</a></li>
+          <li><a href="/certificado-eficiencia-energetica-asturias.html">Certificado energético</a></li>
+          <li><a href="/rehabilitacion-fachadas-asturias.html">Rehabilitación fachadas</a></li>
+          <li><a href="/obras-publicas-asturias.html">Obras públicas</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__heading">Empresa</h3>
+        <ul class="footer__links">
+          <li><a href="/presupuesto-reformas-asturias.html">Presupuesto gratis</a></li>
+          <li><a href="/contacto.html">Contacto</a></li>
+          <li><a href="/politica-privacidad.html">Política de privacidad</a></li>
+          <li><a href="/aviso-legal.html">Aviso legal</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
+        <div style="margin-top:1.25rem; display:flex; gap:0.75rem;">
+          <a href="{{FACEBOOK}}"  target="_blank" rel="noopener" aria-label="Facebook RCASTUR"
+             style="color:rgba(255,255,255,0.45); font-size:13px;">FB</a>
+          <a href="{{INSTAGRAM}}" target="_blank" rel="noopener" aria-label="Instagram RCASTUR"
+             style="color:rgba(255,255,255,0.45); font-size:13px;">IG</a>
+          <a href="{{LINKEDIN}}"  target="_blank" rel="noopener" aria-label="LinkedIn RCASTUR"
+             style="color:rgba(255,255,255,0.45); font-size:13px;">LI</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">
+        © {{YEAR}} <span itemprop="name">{{BUSINESS_NAME}}</span>.
+        Todos los derechos reservados.
+      </p>
+      <nav class="footer__legal" aria-label="Legal">
+        <a href="/politica-privacidad.html">Privacidad</a>
+        <a href="/aviso-legal.html">Aviso legal</a>
+        <a href="/cookies.html">Cookies</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ═══ WHATSAPP FLOTANTE ════════════════════════════════════════════ -->
+  <a class="whatsapp-float"
+     href="https://wa.me/{{WHATSAPP}}?text=Hola,%20me%20gustaría%20pedir%20información%20sobre%20reformas"
+     target="_blank" rel="noopener"
+     aria-label="Contactar por WhatsApp con RCASTUR">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    WhatsApp
+  </a>
+
+  <!-- ═══ SCRIPTS ══════════════════════════════════════════════════════ -->
+  <script>
+    // ── Vídeo hero a mitad de velocidad ───────────────────────────────
+    (function() {
+      var v = document.getElementById('hero-video');
+      if (v) {
+        v.playbackRate = 0.5;
+        v.addEventListener('loadedmetadata', function() {
+          v.playbackRate = 0.5;
+        });
+      }
+    })();
+
+    // ── Burger menu ───────────────────────────────────────────────────
+    (function() {
+      var btn  = document.getElementById('burger');
+      var menu = document.getElementById('nav-menu');
+      if (!btn || !menu) return;
+      btn.addEventListener('click', function() {
+        var open = menu.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open);
+      });
+    })();
+
+    // ── Navbar opacidad en scroll ─────────────────────────────────────
+    (function() {
+      var nav = document.querySelector('.navbar');
+      if (!nav) return;
+      window.addEventListener('scroll', function() {
+        nav.style.background = window.scrollY > 60
+          ? 'rgba(13,27,42,0.99)'
+          : 'rgba(13,27,42,0.96)';
+      }, { passive: true });
+    })();
+  </script>
+
+</body>
+</html>

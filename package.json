@@ -1,0 +1,12 @@
+{
+  "name": "rcastur-web",
+  "version": "1.0.0",
+  "description": "RCASTUR — Reformas y Construcción Asturias S.L. — Generador de páginas estáticas SEO",
+  "main": "generate.js",
+  "scripts": {
+    "build": "node generate.js",
+    "dev": "node generate.js && echo '✅ Páginas generadas en /dist'"
+  },
+  "author": "RCASTUR",
+  "license": "PRIVATE"
+}

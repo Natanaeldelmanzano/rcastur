@@ -1,0 +1,333 @@
+[
+  {
+    "slug": "index",
+    "priority": "1.0",
+    "changefreq": "weekly",
+    "title": "RCASTUR | Reformas y Construcción Asturias S.L. — Oviedo, Gijón, Avilés",
+    "metaDescription": "Empresa de reformas, construcción y arquitectura técnica en Asturias. ITE, certificados energéticos, obras, planos y dirección facultativa. Presupuesto gratis. ☎ 985 000 000",
+    "keywords": "reformas asturias, construcción oviedo, empresa reformas oviedo, arquitectura técnica asturias, ITE oviedo, certificado energético asturias",
+    "ogTitle": "RCASTUR — Reformas y Construcción Asturias | Tu empresa técnica de confianza",
+    "ogDesc": "Reformas integrales, obra nueva, inspecciones ITE y certificados energéticos en Asturias. Más de 15 años de experiencia. Llámanos.",
+    "ogImage": "img/img6.jpg",
+    "robots": "index, follow",
+    "h1": "Reformas y Construcción en Asturias",
+    "h2": "Arquitectura técnica, inspecciones e inspección de edificios en Oviedo, Gijón y Avilés",
+    "heroText": "Tu empresa técnica de confianza en Asturias",
+    "heroSubtext": "Reformas · Construcción · Arquitectura Técnica · Inspecciones · Certificaciones",
+    "breadcrumb": [],
+    "contenido": "<p>En <strong>RCASTUR – Reformas y Construcción Asturias S.L.</strong> ofrecemos un servicio integral que va desde la simple reforma de un baño hasta la dirección técnica de una obra de nueva planta. Somos la empresa de referencia en <strong>reformas en Oviedo</strong>, <strong>Gijón</strong>, <strong>Avilés</strong>, <strong>Siero</strong> y <strong>Mieres</strong>.</p><p>Contamos con arquitectos técnicos colegiados, aparejadores y técnicos especializados que garantizan la calidad y el cumplimiento normativo en cada proyecto.</p>"
+  },
+
+  {
+    "slug": "reformas-oviedo",
+    "priority": "0.9",
+    "changefreq": "monthly",
+    "title": "Reformas en Oviedo | RCASTUR ☎ 985 000 000 — Presupuesto Gratis",
+    "metaDescription": "Empresa de reformas en Oviedo con 15 años de experiencia. Reformas integrales de pisos, cocinas, baños y locales. Presupuesto gratuito en 24h. ☎ 985 000 000",
+    "keywords": "reformas oviedo, empresa reformas oviedo, reformas integrales oviedo, reformas pisos oviedo, reformas cocinas oviedo",
+    "ogTitle": "Reformas en Oviedo | RCASTUR — La empresa técnica de referencia",
+    "ogDesc": "Reformas integrales, cocinas, baños y locales en Oviedo. Equipo propio, sin intermediarios. Presupuesto gratis en 24h.",
+    "ogImage": "img/img1.jpeg",
+    "robots": "index, follow",
+    "h1": "Reformas en Oviedo",
+    "h2": "Reformas integrales de viviendas, locales y edificios en Oviedo",
+    "heroText": "Reformas en Oviedo con garantía técnica",
+    "heroSubtext": "Presupuesto gratuito en 24 horas · Sin intermediarios · Equipo propio",
+    "breadcrumb": [{ "name": "Reformas Oviedo", "slug": "reformas-oviedo" }],
+    "serviceSchema": {
+      "name": "Reformas en Oviedo",
+      "description": "Reformas integrales de viviendas, pisos, cocinas, baños y locales comerciales en Oviedo, Asturias.",
+      "area": "Oviedo, Asturias",
+      "type": "Reformas integrales"
+    },
+    "contenido": "<p>Somos la empresa de <strong>reformas en Oviedo</strong> de confianza para propietarios, comunidades de vecinos y promotores. Llevamos más de 15 años ejecutando proyectos de reforma con calidad certificada y equipos propios en toda la ciudad y sus concejos.</p><h2>¿Qué reformas hacemos en Oviedo?</h2><ul><li><strong>Reformas integrales de vivienda</strong> — Renovación completa de pisos, incluidos todos los gremios.</li><li><strong>Reforma de cocinas</strong> — Diseño, demolición, fontanería, electricidad y acabados.</li><li><strong>Reforma de baños</strong> — Alicatado, solado, sanitarios, griferías y mamparas.</li><li><strong>Reforma de locales comerciales</strong> — Adecuación de espacios, cumplimiento normativo.</li><li><strong>Pintura y acabados</strong> — Lisos, texturas, microcemento, esmaltes.</li></ul>"
+  },
+
+  {
+    "slug": "reformas-gijon",
+    "priority": "0.9",
+    "changefreq": "monthly",
+    "title": "Reformas en Gijón | RCASTUR ☎ 985 000 000 — Presupuesto Gratis",
+    "metaDescription": "Empresa de reformas en Gijón. Reformas integrales de pisos, cocinas y baños. Equipo propio, sin sorpresas en el precio. Llámanos: 985 000 000.",
+    "keywords": "reformas gijon, empresa reformas gijon, reformas integrales gijon, reformas pisos gijon",
+    "ogTitle": "Reformas en Gijón | RCASTUR",
+    "ogDesc": "Reformas integrales de viviendas y locales en Gijón. Equipo propio, precios sin sorpresas. Presupuesto gratis.",
+    "ogImage": "img/img1.jpeg",
+    "robots": "index, follow",
+    "h1": "Reformas en Gijón",
+    "h2": "Reformas integrales de pisos, cocinas, baños y locales en Gijón",
+    "heroText": "Reformas en Gijón con garantía técnica",
+    "heroSubtext": "Presupuesto gratuito · Equipo propio · Sin intermediarios",
+    "breadcrumb": [{ "name": "Reformas Gijón", "slug": "reformas-gijon" }],
+    "serviceSchema": {
+      "name": "Reformas en Gijón",
+      "description": "Reformas integrales de viviendas, pisos, cocinas, baños y locales comerciales en Gijón, Asturias.",
+      "area": "Gijón, Asturias",
+      "type": "Reformas integrales"
+    },
+    "contenido": "<p>Ejecutamos <strong>reformas en Gijón</strong> con la misma calidad y rigor técnico que en nuestra sede de Oviedo. Equipo propio, materiales de primera y gestión de permisos incluida.</p>"
+  },
+
+  {
+    "slug": "reformas-aviles",
+    "priority": "0.8",
+    "changefreq": "monthly",
+    "title": "Reformas en Avilés | RCASTUR ☎ 985 000 000 — Presupuesto Sin Compromiso",
+    "metaDescription": "Reformas integrales en Avilés y su comarca. Empresa con equipo propio, materiales de calidad y presupuesto gratuito. RCASTUR — 985 000 000.",
+    "keywords": "reformas aviles, empresa reformas aviles, reformas integrales aviles",
+    "ogTitle": "Reformas en Avilés | RCASTUR",
+    "ogDesc": "Reformas integrales en Avilés. Equipo propio, sin sorpresas. Presupuesto gratis.",
+    "ogImage": "img/img1.jpeg",
+    "robots": "index, follow",
+    "h1": "Reformas en Avilés",
+    "h2": "Empresa de reformas integrales en Avilés y su comarca",
+    "heroText": "Reformas en Avilés de calidad técnica",
+    "heroSubtext": "Presupuesto gratuito · Equipo propio · Sin intermediarios",
+    "breadcrumb": [{ "name": "Reformas Avilés", "slug": "reformas-aviles" }],
+    "serviceSchema": {
+      "name": "Reformas en Avilés",
+      "description": "Reformas integrales en Avilés, Asturias.",
+      "area": "Avilés, Asturias",
+      "type": "Reformas integrales"
+    },
+    "contenido": "<p>Cubrimos <strong>reformas en Avilés</strong> y toda su comarca con desplazamiento incluido. Presupuesto gratuito en 24 horas.</p>"
+  },
+
+  {
+    "slug": "reformas-siero",
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "title": "Reformas en Siero | RCASTUR ☎ 985 000 000",
+    "metaDescription": "Reformas integrales en Siero (Pola de Siero, Lugones, Valdesoto). Empresa de reformas con equipo propio. Presupuesto gratis. RCASTUR.",
+    "keywords": "reformas siero, reformas pola de siero, empresa reformas siero asturias",
+    "ogTitle": "Reformas en Siero | RCASTUR",
+    "ogDesc": "Reformas integrales en Siero y sus parroquias. Equipo propio. Presupuesto sin compromiso.",
+    "ogImage": "img/img1.jpeg",
+    "robots": "index, follow",
+    "h1": "Reformas en Siero",
+    "h2": "Reformas en Pola de Siero, Lugones y todo el concejo",
+    "heroText": "Reformas en Siero con garantía técnica",
+    "heroSubtext": "Toda la comarca · Equipo propio · Sin intermediarios",
+    "breadcrumb": [{ "name": "Reformas Siero", "slug": "reformas-siero" }],
+    "serviceSchema": {
+      "name": "Reformas en Siero",
+      "description": "Reformas integrales en el concejo de Siero, Asturias.",
+      "area": "Siero, Asturias",
+      "type": "Reformas integrales"
+    },
+    "contenido": "<p>Realizamos <strong>reformas en Siero</strong> con desplazamiento incluido. Cubrimos Pola de Siero, Lugones, Valdesoto y todas sus parroquias.</p>"
+  },
+
+  {
+    "slug": "reformas-mieres",
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "title": "Reformas en Mieres | RCASTUR ☎ 985 000 000",
+    "metaDescription": "Empresa de reformas en Mieres. Reformas integrales, cocinas, baños y locales. Presupuesto gratuito y rápido. RCASTUR Asturias.",
+    "keywords": "reformas mieres, empresa reformas mieres, reformas integrales mieres asturias",
+    "ogTitle": "Reformas en Mieres | RCASTUR",
+    "ogDesc": "Reformas integrales en Mieres y cuenca del Caudal. Presupuesto gratis. Equipo propio.",
+    "ogImage": "img/img1.jpeg",
+    "robots": "index, follow",
+    "h1": "Reformas en Mieres",
+    "h2": "Reformas integrales en Mieres y la cuenca del Caudal",
+    "heroText": "Reformas en Mieres con garantía técnica",
+    "heroSubtext": "Cuenca del Caudal · Equipo propio · Presupuesto gratis",
+    "breadcrumb": [{ "name": "Reformas Mieres", "slug": "reformas-mieres" }],
+    "serviceSchema": {
+      "name": "Reformas en Mieres",
+      "description": "Reformas integrales en Mieres y la cuenca del Caudal, Asturias.",
+      "area": "Mieres, Asturias",
+      "type": "Reformas integrales"
+    },
+    "contenido": "<p>Cubrimos <strong>reformas en Mieres</strong> y toda la cuenca del Caudal con el mismo nivel técnico y de calidad que en las grandes ciudades asturianas.</p>"
+  },
+
+  {
+    "slug": "construccion-obra-nueva-asturias",
+    "priority": "0.9",
+    "changefreq": "monthly",
+    "title": "Construcción Obra Nueva Asturias | RCASTUR ☎ 985 000 000",
+    "metaDescription": "Empresa de construcción de obra nueva en Asturias. Viviendas unifamiliares, naves y edificios. Gestión integral del proyecto. Presupuesto gratis. RCASTUR.",
+    "keywords": "construccion obra nueva asturias, empresa construccion oviedo, constructora asturias, viviendas unifamiliares asturias",
+    "ogTitle": "Construcción Obra Nueva en Asturias | RCASTUR",
+    "ogDesc": "Construcción de obra nueva en Asturias. Viviendas, naves, edificios. Gestión completa del proyecto. Presupuesto gratis.",
+    "ogImage": "img/img4.jpg",
+    "robots": "index, follow",
+    "h1": "Construcción de Obra Nueva en Asturias",
+    "h2": "Empresa constructora en Oviedo, Gijón y Avilés",
+    "heroText": "Tu constructora de confianza en Asturias",
+    "heroSubtext": "Obra nueva · Viviendas unifamiliares · Naves · Edificios",
+    "breadcrumb": [{ "name": "Obra Nueva", "slug": "construccion-obra-nueva-asturias" }],
+    "serviceSchema": {
+      "name": "Construcción de obra nueva en Asturias",
+      "description": "Construcción de viviendas unifamiliares, naves industriales y edificios en Asturias.",
+      "area": "Asturias",
+      "type": "Construcción de obra nueva"
+    },
+    "contenido": "<p>Somos una <strong>empresa constructora en Asturias</strong> especializada en obra nueva residencial, naves industriales y edificios plurifamiliares. Gestionamos el proyecto de principio a fin: desde la licencia hasta la cédula de habitabilidad.</p><h2>Tipologías de obra nueva que ejecutamos</h2><ul><li><strong>Viviendas unifamiliares</strong> — Casas de obra, estructura y acabados a medida.</li><li><strong>Naves industriales y comerciales</strong> — Estructuras metálicas y de hormigón.</li><li><strong>Edificios plurifamiliares</strong> — Promociones residenciales llave en mano.</li><li><strong>Obra pública</strong> — Urbanizaciones, viales y obras civiles.</li></ul>"
+  },
+
+  {
+    "slug": "arquitectura-tecnica-planos-oviedo",
+    "priority": "0.9",
+    "changefreq": "monthly",
+    "title": "Arquitectura Técnica y Planos en Oviedo | RCASTUR — Aparejador",
+    "metaDescription": "Servicios de arquitectura técnica en Oviedo: elaboración de planos, proyectos de ejecución, dirección de obra y aparejador colegiado. RCASTUR ☎ 985 000 000.",
+    "keywords": "arquitectura tecnica oviedo, aparejador oviedo, planos obra oviedo, proyecto ejecucion oviedo, direccion obra oviedo",
+    "ogTitle": "Arquitectura Técnica y Planos en Oviedo | RCASTUR",
+    "ogDesc": "Aparejador colegiado en Oviedo. Planos, proyectos, dirección de obra y gestión de licencias. Llámanos.",
+    "ogImage": "img/img3.jpeg",
+    "robots": "index, follow",
+    "h1": "Arquitectura Técnica en Oviedo",
+    "h2": "Planos, proyectos de ejecución y dirección facultativa",
+    "heroText": "Arquitectura técnica con rigor profesional",
+    "heroSubtext": "Aparejador colegiado · Planos · Proyectos · Licencias",
+    "breadcrumb": [{ "name": "Arquitectura Técnica", "slug": "arquitectura-tecnica-planos-oviedo" }],
+    "serviceSchema": {
+      "name": "Arquitectura técnica en Oviedo",
+      "description": "Elaboración de planos, proyectos de ejecución, dirección de obra y gestión de licencias en Oviedo, Asturias.",
+      "area": "Oviedo, Asturias",
+      "type": "Arquitectura técnica"
+    },
+    "contenido": "<p>Nuestro equipo de <strong>arquitectura técnica en Oviedo</strong> cuenta con aparejadores colegiados que acompañan el proyecto desde los primeros planos hasta la entrega de llaves. Rigor técnico, cumplimiento del CTE y gestión completa de licencias municipales.</p><h2>Servicios de arquitectura técnica</h2><ul><li><strong>Elaboración de planos técnicos</strong> — Plantas, alzados, secciones y detalles constructivos.</li><li><strong>Proyectos de ejecución</strong> — Documentación técnica completa para licencia de obra.</li><li><strong>Dirección de obra</strong> — Seguimiento técnico y control de calidad en obra.</li><li><strong>Gestión de licencias</strong> — Tramitación ante el Ayuntamiento de Oviedo y municipios de Asturias.</li><li><strong>Mediciones y presupuestos</strong> — Valoración económica detallada del proyecto.</li></ul>"
+  },
+
+  {
+    "slug": "inspeccion-tecnica-edificios-ITE-oviedo",
+    "priority": "0.9",
+    "changefreq": "monthly",
+    "title": "ITE Inspección Técnica de Edificios Oviedo | RCASTUR — Certificado Oficial",
+    "metaDescription": "ITE — Inspección Técnica de Edificios en Oviedo y Asturias. Informe técnico oficial, gestión completa con el Ayuntamiento. Aparejador colegiado. ☎ 985 000 000.",
+    "keywords": "ITE oviedo, inspeccion tecnica edificios oviedo, ITE asturias, certificado ITE oviedo, aparejador ITE oviedo",
+    "ogTitle": "ITE Inspección Técnica de Edificios en Oviedo | RCASTUR",
+    "ogDesc": "Realizamos la ITE de tu edificio en Oviedo. Informe técnico oficial, tramitación completa y precios claros.",
+    "ogImage": "img/img2.jpeg",
+    "robots": "index, follow",
+    "h1": "ITE — Inspección Técnica de Edificios en Oviedo",
+    "h2": "Informe técnico oficial para cumplir la normativa municipal",
+    "heroText": "ITE en Oviedo — Tramitación completa",
+    "heroSubtext": "Informe oficial · Aparejador colegiado · Gestión con el Ayuntamiento",
+    "breadcrumb": [{ "name": "ITE Oviedo", "slug": "inspeccion-tecnica-edificios-ITE-oviedo" }],
+    "serviceSchema": {
+      "name": "ITE — Inspección Técnica de Edificios en Oviedo",
+      "description": "Inspección técnica oficial de edificios (ITE) en Oviedo y Asturias, con informe técnico y tramitación ante el Ayuntamiento.",
+      "area": "Oviedo, Asturias",
+      "type": "Inspección técnica de edificios"
+    },
+    "contenido": "<p>La <strong>ITE (Inspección Técnica de Edificios)</strong> es obligatoria para edificios residenciales con más de 50 años en Oviedo y la mayoría de municipios asturianos. En RCASTUR realizamos la inspección y emitimos el informe técnico oficial, gestionando todo el trámite con el Ayuntamiento.</p><h2>¿Qué incluye nuestra ITE?</h2><ul><li>Visita técnica al edificio por aparejador colegiado</li><li>Inspección de estructura, fachadas, cubiertas e instalaciones</li><li>Redacción del informe técnico oficial</li><li>Presentación ante el Ayuntamiento</li><li>Asesoramiento sobre obras de subsanación si las hay</li></ul><h2>¿Cuándo es obligatoria la ITE en Oviedo?</h2><p>Los edificios de uso residencial deben someterse a la ITE cuando alcancen los <strong>50 años de antigüedad</strong> y posteriormente cada 10 años. El Ayuntamiento de Oviedo puede requerir la ITE en cualquier momento si detecta deficiencias.</p>"
+  },
+
+  {
+    "slug": "certificado-eficiencia-energetica-asturias",
+    "priority": "0.9",
+    "changefreq": "monthly",
+    "title": "Certificado de Eficiencia Energética Asturias | RCASTUR — Rápido y Oficial",
+    "metaDescription": "Certificado de eficiencia energética en Asturias (Oviedo, Gijón, Avilés). Obligatorio para alquilar o vender. Técnico certificador. Entrega en 48h. ☎ 985 000 000.",
+    "keywords": "certificado eficiencia energetica oviedo, certificado energetico asturias, certificado energetico piso oviedo, CEE oviedo",
+    "ogTitle": "Certificado de Eficiencia Energética en Asturias | RCASTUR",
+    "ogDesc": "Certificado energético oficial en Asturias. Obligatorio para alquilar o vender. Entrega en 48h. Llámanos.",
+    "ogImage": "img/img3.jpeg",
+    "robots": "index, follow",
+    "h1": "Certificado de Eficiencia Energética en Asturias",
+    "h2": "Obligatorio para alquilar o vender tu inmueble",
+    "heroText": "Certificado energético oficial en 48 horas",
+    "heroSubtext": "Oviedo · Gijón · Avilés · Toda Asturias · Técnico certificador oficial",
+    "breadcrumb": [{ "name": "Certificado Energético", "slug": "certificado-eficiencia-energetica-asturias" }],
+    "serviceSchema": {
+      "name": "Certificado de eficiencia energética en Asturias",
+      "description": "Emisión del certificado oficial de eficiencia energética para viviendas y locales en Asturias.",
+      "area": "Asturias",
+      "type": "Certificación energética"
+    },
+    "contenido": "<p>El <strong>certificado de eficiencia energética</strong> es obligatorio para cualquier venta o alquiler de inmuebles en España. En RCASTUR lo tramitamos de forma rápida y a precio competitivo, con técnico certificador oficial y registro en el RITE de Asturias.</p><h2>¿Cuándo necesitas el certificado energético?</h2><ul><li>Para <strong>vender</strong> tu piso, casa o local.</li><li>Para <strong>alquilar</strong> cualquier inmueble.</li><li>Para solicitar subvenciones de rehabilitación energética.</li></ul><h2>¿Qué incluye el servicio?</h2><ul><li>Visita técnica al inmueble</li><li>Toma de datos y cálculo energético</li><li>Emisión del certificado oficial (etiqueta A-G)</li><li>Registro en el PANER de Asturias</li><li>Entrega en formato digital en 48h</li></ul>"
+  },
+
+  {
+    "slug": "rehabilitacion-fachadas-asturias",
+    "priority": "0.8",
+    "changefreq": "monthly",
+    "title": "Rehabilitación de Fachadas Asturias | RCASTUR ☎ 985 000 000",
+    "metaDescription": "Rehabilitación de fachadas en Asturias. SATE, mortero monocapa, piedra natural, limpieza y tratamientos. Empresa especializada. Presupuesto gratis. RCASTUR.",
+    "keywords": "rehabilitacion fachadas asturias, rehabilitacion fachadas oviedo, SATE oviedo, fachadas ventiladas asturias",
+    "ogTitle": "Rehabilitación de Fachadas en Asturias | RCASTUR",
+    "ogDesc": "Rehabilitación de fachadas en Oviedo, Gijón y Avilés. SATE, monocapa, piedra. Presupuesto gratis.",
+    "ogImage": "img/img5.jpeg",
+    "robots": "index, follow",
+    "h1": "Rehabilitación de Fachadas en Asturias",
+    "h2": "SATE, monocapa, fachada ventilada y restauración de piedra",
+    "heroText": "Rehabilitación de fachadas con garantía técnica",
+    "heroSubtext": "SATE · Monocapa · Fachada ventilada · Toda Asturias",
+    "breadcrumb": [{ "name": "Rehabilitación Fachadas", "slug": "rehabilitacion-fachadas-asturias" }],
+    "serviceSchema": {
+      "name": "Rehabilitación de fachadas en Asturias",
+      "description": "Rehabilitación integral de fachadas en Asturias: SATE, monocapa, fachada ventilada, limpieza y restauración de piedra.",
+      "area": "Asturias",
+      "type": "Rehabilitación de fachadas"
+    },
+    "contenido": "<p>La <strong>rehabilitación de fachadas en Asturias</strong> requiere materiales y sistemas adaptados al clima atlántico: lluvia frecuente, humedad y temperaturas moderadas. En RCASTUR aplicamos el sistema más adecuado para cada tipología de edificio.</p><h2>Sistemas de rehabilitación de fachadas</h2><ul><li><strong>SATE (Sistema de Aislamiento Térmico por el Exterior)</strong> — Mejora el aislamiento y elimina los puentes térmicos.</li><li><strong>Mortero monocapa</strong> — Acabado decorativo y protector en una sola capa.</li><li><strong>Fachada ventilada</strong> — Sistema de alta prestación con cámara de aire.</li><li><strong>Restauración de piedra</strong> — Limpieza, consolidación y tratamiento de fachadas de piedra asturiana.</li></ul>"
+  },
+
+  {
+    "slug": "obras-publicas-asturias",
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "title": "Obras Públicas Asturias | RCASTUR — Licitaciones y Urbanización",
+    "metaDescription": "Empresa de obras públicas en Asturias. Urbanizaciones, viales, saneamientos y licitaciones para administraciones públicas. REA inscrita. RCASTUR ☎ 985 000 000.",
+    "keywords": "obras publicas asturias, licitaciones construccion asturias, urbanizacion oviedo, empresa obras civiles asturias",
+    "ogTitle": "Obras Públicas en Asturias | RCASTUR",
+    "ogDesc": "Empresa de obras públicas y civiles en Asturias. Urbanizaciones, viales y licitaciones. Empresa REA inscrita.",
+    "ogImage": "img/img4.jpg",
+    "robots": "index, follow",
+    "h1": "Obras Públicas y Obra Civil en Asturias",
+    "h2": "Urbanizaciones, viales, saneamientos y licitaciones públicas",
+    "heroText": "Tu empresa de obras públicas en Asturias",
+    "heroSubtext": "Empresa REA inscrita · Licitaciones · Urbanizaciones · Obra civil",
+    "breadcrumb": [{ "name": "Obras Públicas", "slug": "obras-publicas-asturias" }],
+    "serviceSchema": {
+      "name": "Obras públicas en Asturias",
+      "description": "Ejecución de obras públicas y civiles en Asturias: urbanizaciones, viales, redes de saneamiento y licitaciones para administraciones públicas.",
+      "area": "Asturias",
+      "type": "Obra civil y pública"
+    },
+    "contenido": "<p>RCASTUR está inscrita en el <strong>Registro de Empresas Acreditadas (REA)</strong> del Principado de Asturias y habilitada para concurrir a licitaciones y contrataciones con la administración pública. Contamos con clasificación de contratista para distintos grupos de obra civil.</p><h2>Obras públicas que ejecutamos</h2><ul><li><strong>Urbanizaciones</strong> — Redes de agua, saneamiento, electricidad y pavimentación.</li><li><strong>Viales y carreteras</strong> — Firmes, aceras, señalización y obras de drenaje.</li><li><strong>Redes de saneamiento</strong> — Colectores, pozos y conexiones domiciliarias.</li><li><strong>Licitaciones municipales</strong> — Ayuntamientos de Asturias y Principado.</li></ul>"
+  },
+
+  {
+    "slug": "presupuesto-reformas-asturias",
+    "priority": "0.8",
+    "changefreq": "monthly",
+    "title": "Presupuesto Reformas Asturias Gratis | RCASTUR — Respuesta en 24h",
+    "metaDescription": "Solicita tu presupuesto de reformas gratis en Asturias. Respuesta en 24 horas. Sin compromiso. RCASTUR — empresa de reformas en Oviedo, Gijón y Avilés.",
+    "keywords": "presupuesto reformas asturias, presupuesto reformas oviedo, presupuesto gratis reformas asturias",
+    "ogTitle": "Presupuesto de Reformas Gratis en Asturias | RCASTUR",
+    "ogDesc": "Solicita presupuesto gratis para tu reforma en Asturias. Respuesta garantizada en 24 horas.",
+    "ogImage": "img/img1.jpeg",
+    "robots": "index, follow",
+    "h1": "Solicita tu Presupuesto de Reformas Gratis",
+    "h2": "Presupuesto sin compromiso en 24 horas para toda Asturias",
+    "heroText": "Presupuesto gratuito en 24 horas",
+    "heroSubtext": "Sin compromiso · Toda Asturias · Respuesta garantizada",
+    "breadcrumb": [{ "name": "Presupuesto", "slug": "presupuesto-reformas-asturias" }],
+    "contenido": "<p>Solicita tu <strong>presupuesto de reformas gratis</strong> en Asturias. Respondemos en menos de 24 horas con una valoración inicial sin compromiso. Si lo deseas, acordamos una visita técnica al inmueble para elaborar un presupuesto detallado.</p>"
+  },
+
+  {
+    "slug": "contacto",
+    "priority": "0.6",
+    "changefreq": "yearly",
+    "title": "Contacto | RCASTUR — Reformas y Construcción Asturias",
+    "metaDescription": "Contacta con RCASTUR — Reformas y Construcción Asturias S.L. Teléfono, WhatsApp y formulario de contacto. Respondemos en menos de 24 horas.",
+    "keywords": "contacto rcastur, empresa reformas oviedo contacto, telefono reformas asturias",
+    "ogTitle": "Contacto | RCASTUR Asturias",
+    "ogDesc": "Llámanos, escríbenos o visítanos. RCASTUR — Tu empresa de reformas y construcción en Asturias.",
+    "ogImage": "img/img2.jpeg",
+    "robots": "index, follow",
+    "h1": "Contacta con RCASTUR",
+    "h2": "Estamos en Oviedo. Cubrimos toda Asturias",
+    "heroText": "Contacta con nosotros",
+    "heroSubtext": "Oviedo · Gijón · Avilés · Toda Asturias",
+    "breadcrumb": [{ "name": "Contacto", "slug": "contacto" }],
+    "contenido": "<p>Puedes contactar con <strong>RCASTUR</strong> por teléfono, WhatsApp o mediante el formulario. Respondemos en menos de 24 horas laborables.</p>"
+  }
+]
