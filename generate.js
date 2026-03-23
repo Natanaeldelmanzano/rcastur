@@ -84,7 +84,7 @@ const BUSINESS = {
 const PATHS = {
   template:  './src/template.html',
   pages:     './src/pages.json',
-  dist:      './dist',
+  dist:      './paginas',
   imgBase:   '/img/',
   videoBase: '/video/',
 };
